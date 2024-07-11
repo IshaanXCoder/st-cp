@@ -12,11 +12,11 @@ int main(){
     std:: cout << arr[2];
 
 
-    std:: string s;
-    std:: cin >> s;
+        // std:: string s;
+        // std:: cin >> s;
     // std:: cout << s[1];
-    int len = s.size();
-    std:: cout << s[len-2];
+        // int len = s.size();
+        // std:: cout << s[len-2];
     // Every character in a string is stored as an index, and the first index is 0th index.
 
     return 0;
