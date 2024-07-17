@@ -38,17 +38,17 @@ int main(){
     std::cout<<std::endl;
 
 
-    v.clear();
-    std::cout << "vector ka size after clearing is : " << v.size() <<std::endl;
-    std::cout << "vector ka capacity after clearing is : " << v.capacity() <<std::endl;
+    // v.clear();
+    // std::cout << "vector ka size after clearing is : " << v.size() <<std::endl;
+    // std::cout << "vector ka capacity after clearing is : " << v.capacity() <<std::endl;
 
     // HENCE WE CAN SAY THAT AFTER CLEARIGN A VECTOR, THE SIZSE BECOMES 0 WILL CAPACITY IS NOT ZERO!
 
-    std::cout << "vector after clearing is : " << std::endl;
-    for(int i:v){
-        std::cout<<i<<" ";
-    }
-    std::cout<<std::endl;
+    // std::cout << "vector after clearing is : " << std::endl;
+    // for(int i:v){
+    //     std::cout<<i<<" ";
+    // }
+    // std::cout<<std::endl;
 
     std::vector<int> newVector(5,1);
     // this means creating a vector of 5 elements which all are 1!
@@ -58,5 +58,6 @@ int main(){
             std::cout<<i<<" ";
         }
     
+    std::cout   <<v.begin();
 
 }
