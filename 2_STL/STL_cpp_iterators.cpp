@@ -1,13 +1,12 @@
-#include<iostream>
-#include<vector>
-#include<iterator>
 
-int main(){
-    std::vector<std::string> random = {"hellp", "my", "anem"};
-for(int i=0; i<random.size(); i++){
-   std::cout<< random[i] <<std::endl;
 
+#include <bits/stdc++.h>
+
+int main() {
+    std::vector<int> v = {1, 2, 3, 4, 5}; // Initialize vector with some values
+    std::vector<int>::iterator it = v.begin();
+    it++;
+    std::cout << *(it) << std::endl;
+
+    return 0;
 }
-   return 0;
-}
-
