@@ -8,6 +8,7 @@ int main() {
     // Read vector elements
     for(int i = 0; i < n; i++) {
         std::cin >> arr[i];
+        std::cin >> arr[i];
     }
 
     int num0 = 0, num1 = 0, num2 = 0;
