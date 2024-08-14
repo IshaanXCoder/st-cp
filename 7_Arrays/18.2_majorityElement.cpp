@@ -10,6 +10,7 @@ int main(){
     int myArr[n];
     for(int i=0;i<n;i++){
         std::cin>>myArr[i];
+        std::cin>>myArr[i];
     }
 
     for(int i=0;i<n;i++){
