@@ -1,30 +1,26 @@
-// smallest index such that arr[index]>n
+#include <iostream>
+#include <vector>
+#include <algorithm>
 
-myFun(n, target, myArr[n]){
-     int low = 0;
-    int high = n - 1;
-    int ans = -1;  // Initialize ans to -1 to indicate no suitable value found
+int main() {
+    // A sorted array (required for upper_bound to work correctly)
+    std::vector<int> arr = {10, 20, 30, 40, 50};
 
-}
+    // Value for which we want to find the upper bound
+    int x = 30;
 
+    // Find the first element that is greater than x using upper_bound
+    int index = std::upper_bound(arr.begin(), arr.end(), x) - arr.begin();
 
-#include<bits/stdc++.h>
-int main(){
-    int n;
-    int x;
-    
-    std::cout << "Enter x : ";
-    std::cin >> x;
-
-    std::cout << "Enter the number of elements : ";
-    std::cin >> n;
-    
-    std::vector<int> myArr(n);
-    std::cout << "Enter the elements : ";
-    for(int i = 0; i < n; i++) {
-        std::cin >> myArr[i];
+    // Check if the upper bound is within the range of the array
+    if (index < arr.size()) {
+        // Output the index and value of the upper bound
+        std::cout << "Upper bound of " << x << " is at index " << index 
+                  << " with value " << arr[index] << '\n';
+    } else {
+        // If all elements are less than or equal to x
+        std::cout << x << " is greater than or equal to all elements in the array\n";
     }
 
-    std::cout << myFun(n, x, myArr);
     return 0;
 }
