@@ -1,40 +1,21 @@
-#include<bits/stdc++.h>
-
-int myFun(int n, int x, std::vector<int>& myArr) {
-    int low = 0;
-    int high = n - 1;
-    int ans = -1;  // Initialize ans to -1 to indicate no suitable value found
-
-    while (low <= high) {
-        int mid = (low + high) / 2;
-
-        if (myArr[mid] >= x) {
-            ans = mid;
-            high = mid - 1;
-        } else {
-            low = mid + 1;
-        }
-    }
-    return ans;
-    
-}
+#include <iostream>
+#include <vector>
+#include <algorithm>
 
 int main() {
-    int n;
-    int x;
-    
-    std::cout << "Enter x : ";
-    std::cin >> x;
+    std::vector<int> arr = {10, 20, 30, 40, 50};
 
-    std::cout << "Enter the number of elements : ";
-    std::cin >> n;
-    
-    std::vector<int> myArr(n);
-    std::cout << "Enter the elements : ";
-    for(int i = 0; i < n; i++) {
-        std::cin >> myArr[i];
+    int x = 35;
+
+    // Finding the lower bound as an index
+    int index = std::lower_bound(arr.begin(), arr.end(), x) - arr.begin();
+
+    if (index < arr.size()) {
+        std::cout << "Lower bound of " << x << " is at index " << index 
+                  << " with value " << arr[index] << '\n';
+    } else {
+        std::cout << x << " is greater than all elements in the array\n";
     }
 
-    std::cout << myFun(n, x, myArr);
     return 0;
 }
