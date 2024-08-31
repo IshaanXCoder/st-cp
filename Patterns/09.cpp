@@ -7,6 +7,8 @@ int main(){
             std::cout<<"*";
         }
         std::cout<<std::endl;
+        std::cout<<std::endl;
+        std::cout<<std::endl;
     }
     for(int j=0;j<n;j++){
         std::cout<<"*";
