@@ -10,7 +10,7 @@ int main(){
 
     std::cout<<"address of a is : "<<&a<<std::endl;
     std::cout<<"address of a is : "<<b<<std::endl;
-s
+
 
 
     std::cout<<"value of b is : "<<*b;
