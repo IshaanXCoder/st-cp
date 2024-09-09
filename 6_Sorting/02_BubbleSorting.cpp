@@ -20,7 +20,7 @@
 // • Compare 5 and 4. Since 5 > 4, swap them. The list becomes [3, 4, 5, 2, 8].
 // • Compare 5 and 2. Since 5 > 2, swap them. The list becomes [3, 4, 2, 5, 8].
 
-// AND SO ON....
+// AND SO ON aise chalta rahgea!!
 
 void myFun(int myArr[], int n){
     for (int i = 0; i < n - 1; i++) {
