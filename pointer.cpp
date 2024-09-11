@@ -18,6 +18,8 @@ int main() {
     
     // 5. Modify the value of 'num' using the pointer
     *ptr = 20;  // Changes the value at the memory location 'ptr' points to
+
+    
     cout << "New value of num after modification via pointer: " << num << endl; // Prints 20
     
     // 6. Demonstrate a null pointer
