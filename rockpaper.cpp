@@ -6,6 +6,8 @@ using namespace std;
 
 int main() {
     srand(time(0));
+
+    
     string choices[3] = {"Rock", "Paper", "Scissors"};
     int playerChoice, computerChoice;
 
@@ -30,3 +32,4 @@ int main() {
 
     return 0;
 }
+HACK ING IJARHEGEE ''
