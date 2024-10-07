@@ -4,7 +4,7 @@
 //constructor should have same name as class
 //constructor doesnt have a return type
 
-////////CONSTRUCTOR IS ALWAYS DECLINED AS PUBLIC!!!!!!!!!!!!!!!!
+////////CONSTRUCTOR IS ALWAYS DEFINED AS PUBLIC!!!!!!!!!!!!!!!!
 
 //MEMORY ALLOCATION OCCURS WHEN CONSTRUCTOR IS CALLED
 
@@ -18,8 +18,8 @@ class employee {
     string jobtitle; 
     string gender; 
 
-    private:
-        double salary; 
+  private:
+    double salary; 
 
 
   public: 

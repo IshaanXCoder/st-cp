@@ -39,6 +39,8 @@ int main() {
     employee e1("Ishaan", "Meta", 213);
     e1.display();
 
+
+//default copy constructor!
     // Using Copy Constructor
     employee e2(e1);  // e2 is a copy of e1
     e2.display();

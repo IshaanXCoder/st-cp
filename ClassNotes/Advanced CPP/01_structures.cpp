@@ -2,7 +2,7 @@
 using namespace std;
 
 //STRUCT WILL BE OUTSIDE INT MAIN!!!
-
+a
 
 // structure is like defining a new datatype, so it goes like struct(keyword) fokllwoed by name of the datatype
 //USER DEFINED DATATYPE!
@@ -29,6 +29,8 @@ int main(){
     //now if we create a pointer e2
     employee dummy;
     // employee *e2 = &dummy;
+
+    //upar waale method se better is to create a dynamic pointer
     employee *e2 = new employee;
     // dynamic varibale banadiyaa!
 
