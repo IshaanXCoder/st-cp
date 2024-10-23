@@ -1,3 +1,5 @@
+//////if we're making any function virtual , then we must override that function in the derived class
+
 #include <iostream>
 using namespace std;
 
@@ -5,12 +7,16 @@ class parent
 {
 public:
     virtual void identify()
+
     // virtual : this keyword is used to make the function virtual
     //  EXPLANATION AT LINE 61,62
+
+    // by adding this keyword, we giev a message to the compiler that this function can be overridden in the derived class
 
     {
         cout << "I am the parent" << endl;
     }
+    // this will not end with the semicolon
 
     void common()
     {
@@ -87,4 +93,7 @@ int main()
 
     // ptr2->relation();
     //////error: no member named 'relation' in 'parent'
+
+    ptr1->parent::identify(); // explicit call to the parent class function
+    // this :: is called scope resolution operator
 }
