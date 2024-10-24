@@ -3,6 +3,8 @@
 // Function to check if the array is sorted in descending order
 bool myFun(int myArr[], int n) {
     for (int i = 0; i < n - 1; i++) {
+
+        
         if (myArr[i + 1] > myArr[i]) {
             return false; // Return false if the array is not sorted in descending order
         }
